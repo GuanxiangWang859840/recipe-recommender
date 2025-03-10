@@ -1,11 +1,10 @@
-require('dotenv').config();
 const express = require('express');
 const axios = require('axios');
 const path = require('path');
 const app = express();
 const port = 3000;
 
-const apiKey = process.env.SPOONACULAR_API_KEY;
+const apiKey = '485a95406f93462b95a27a0c39d6ccbb'; // API Key hardcoded
 
 app.use(express.static(path.join(__dirname)));
 
